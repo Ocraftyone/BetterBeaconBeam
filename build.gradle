@@ -296,9 +296,12 @@ createSrgToMcp.finalizedBy("genIntellijRuns")
 
 if (cfEnabled) {
     if (!file("local.properties").exists()) {
-        propFile = file("local.properties")
-        propFile.createNewFile()
+        var propFile = file("local.properties")
         propFile.write("apiToken=")
+    }
+
+    if (!file("changelog.txt").exists()) {
+        file("changelog.txt").createNewFile()
     }
 
     tasks.register "publishToCurseforge", {
