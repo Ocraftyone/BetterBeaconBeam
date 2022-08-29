@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.ocraftyone.betterbeaconbeam.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "betterbeaconbeam.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "BeaconRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
