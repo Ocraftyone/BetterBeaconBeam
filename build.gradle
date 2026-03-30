@@ -108,6 +108,7 @@ java {
 }
 
 minecraft {
+    reobf = false
     // The mappings can be changed at any time and must be in the following format.
     // Channel:   Version:
     // snapshot   YYYYMMDD   Snapshot are built nightly.
@@ -267,8 +268,6 @@ jar {
         ])
     }
 }
-
-jar.finalizedBy('reobfJar')
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
