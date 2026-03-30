@@ -33,6 +33,7 @@ ext {
     cfEnabled = Boolean.parseBoolean(cfEnabled)
     mcVersions = mcVersions.replaceAll(" ", "").split(",")
     groupNameSlash = groupName.replaceAll("[.]", "/")
+    apiToken = ""
 }
 
 if (file("local.properties").exists()) {
